@@ -23,6 +23,8 @@ void Player::Update()
 	{
 		// 自分自身とは当たり判定しない
 		if (obj->GetObjType() == ObjectType::Player)continue;
+
+		if (obj->GetObjType() == ObjectType::Bullet)continue;
 		
 		// 敵だったら当たり判定を行う
 		if (obj->GetObjType() == ObjectType::Enemy)

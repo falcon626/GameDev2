@@ -55,6 +55,21 @@
     <Filter Include="Src\Framework\Effekseer">
       <UniqueIdentifier>{c81b93e4-2f33-496a-985e-98658f1cec51}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Src\Application\Object">
+      <UniqueIdentifier>{bae7db33-44cf-4aae-b2ba-dd0833d54be5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Application\Scene">
+      <UniqueIdentifier>{305050bb-32f2-4437-9c56-a888b7ba9dfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Application\Object\Player">
+      <UniqueIdentifier>{1886b039-a1cb-4589-b2cc-be55a425b05d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Application\Object\Enemy">
+      <UniqueIdentifier>{fa8a4f2b-a462-47ec-9072-2bd6f89ace9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Application\Object\Bullet">
+      <UniqueIdentifier>{3d9bd964-7671-45ab-aec5-5c466f97c1c4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Pch.h">
@@ -180,6 +195,21 @@
     <ClInclude Include="Src\Framework\Effekseer\KdEffekseerManager.h">
       <Filter>Src\Framework\Effekseer</Filter>
     </ClInclude>
+    <ClInclude Include="Src\Application\Object\BaseObject.h">
+      <Filter>Src\Application\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Application\Object\Player\Player.h">
+      <Filter>Src\Application\Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Application\Object\Enemy\Enemy.h">
+      <Filter>Src\Application\Object\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Application\Object\Bullet\Bullet.h">
+      <Filter>Src\Application\Object\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Application\Scene\GameScene.h">
+      <Filter>Src\Application\Scene</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Pch.cpp">
@@ -283,6 +313,21 @@
     </ClCompile>
     <ClCompile Include="Src\Framework\Effekseer\KdEffekseerManager.cpp">
       <Filter>Src\Framework\Effekseer</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\Object\BaseObject.cpp">
+      <Filter>Src\Application\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\Object\Player\Player.cpp">
+      <Filter>Src\Application\Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\Object\Enemy\Enemy.cpp">
+      <Filter>Src\Application\Object\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\Object\Bullet\Bullet.cpp">
+      <Filter>Src\Application\Object\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\Scene\GameScene.cpp">
+      <Filter>Src\Application\Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

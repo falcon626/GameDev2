@@ -5,7 +5,7 @@ void Bullet::Update()
 {
 	// 移動処理
 	m_pos += m_movePow;
-	if (m_pos.y > (360.0f + 37.0f))
+	if (m_pos.y > (360.0f + 37.0f) || m_pos.x > (640.0f + 37.0f))
 	{
 		OnHit();
 	}
@@ -14,8 +14,8 @@ void Bullet::Update()
 	for (auto& obj : m_owner->GetObjList())
 	{
 		// 自分自身とは当たり判定しない
-		if (obj->GetObjType() == ObjectType::Bullet)continue;
-		if (obj->GetObjType() == ObjectType::Player)continue;
+		//if (obj->GetObjType() == ObjectType::Bullet)continue;
+		//if (obj->GetObjType() == ObjectType::Player)continue;
 
 		// 敵だったら当たり判定を行う
 		if (obj->GetObjType() == ObjectType::Enemy)
@@ -30,6 +30,7 @@ void Bullet::Update()
 				// Hit時の処理を行う
 				obj->OnHit();
 				OnHit();
+				break;
 			}
 		}
 	}

@@ -2,9 +2,11 @@
 
 #include "KdWindow.h"
 
+LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM Param);
 
 bool KdWindow::Create(int clientWidth, int clientHeight, std::string_view titleName, std::string_view windowClassName)
 {
+
 	// インスタンスハンドル取得
 	HINSTANCE hInst = GetInstanceHandle();
 
@@ -130,6 +132,11 @@ LRESULT CALLBACK KdWindow::callWindowProc(HWND hWnd, UINT message, WPARAM wParam
 // ウィンドウ関数
 LRESULT KdWindow::WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
+
+	if (ImGui_ImplWin32_WndProcHandler(hWnd, message, wParam, lParam)) {
+		return true;
+	}
+
 	//===================================
 	//メッセージによって処理を選択
 	//===================================

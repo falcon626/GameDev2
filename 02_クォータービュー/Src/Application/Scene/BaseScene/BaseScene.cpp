@@ -54,7 +54,7 @@ void BaseScene::PreDraw()
 	if (m_camera)
 	{
 		// 現在のカメラ情報をシェーダーにセット
-		m_camera->SetToShader();
+		m_camera->SetToShader(); 
 	}
 
 	for (auto& obj : m_objList)

@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-#include"../BaseScene/BaseScene.h"
+#include "../BaseScene/BaseScene.h"
 
 class GameScene : public BaseScene
 {

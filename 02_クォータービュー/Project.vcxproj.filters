@@ -70,6 +70,15 @@
     <Filter Include="Library\imgui">
       <UniqueIdentifier>{fd3d48e2-8d84-40e0-9329-bfe824d03bdc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Src\Application\Object">
+      <UniqueIdentifier>{fd0b77e5-a898-4080-a170-8d2b5713d52c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Application\Object\BackGround">
+      <UniqueIdentifier>{9878ba34-1870-4fc1-a695-55eefde3adc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Application\Object\Ground">
+      <UniqueIdentifier>{7f4792ad-47f7-421c-b393-9487175b3b12}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Pch.h">
@@ -237,6 +246,12 @@
     <ClInclude Include="..\Library\imgui\imgui_impl_dx11.h">
       <Filter>Library\imgui</Filter>
     </ClInclude>
+    <ClInclude Include="Src\Application\Object\BackGround\BackGround.h">
+      <Filter>Src\Application\Object\BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Application\Object\Ground\Ground.h">
+      <Filter>Src\Application\Object\Ground</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Pch.cpp">
@@ -376,6 +391,12 @@
     </ClCompile>
     <ClCompile Include="..\Library\imgui\imgui_impl_win32.cpp">
       <Filter>Library\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\Object\BackGround\BackGround.cpp">
+      <Filter>Src\Application\Object\BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\Object\Ground\Ground.cpp">
+      <Filter>Src\Application\Object\Ground</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
